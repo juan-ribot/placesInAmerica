@@ -1,0 +1,212 @@
+/* -------------------- */
+/* MINIMAL CSS RESET */
+/* -------------------- */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+//      $COLORES           */
+/* //      $FUENTES           */
+.banner__titulo {
+  color: #FFFFFF;
+  font-size: 3em; }
+
+.banner__nav__1 {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.5em; }
+
+.banner__nav__2 {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.5em; }
+
+.banner__avatar {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.5em; }
+
+.centroPag__fotos {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.5em; }
+
+.centroPag__foto1 {
+  background: url(/assets/img/desktop/@1x/Image.png) no-repeat;
+  height: 100%;
+  background-size: contain; }
+
+.centroPag__foto2 {
+  background: url(/assets/img/desktop/@1x/Image.png) no-repeat;
+  height: 100%;
+  background-size: contain; }
+
+.banner {
+  height: 455px;
+  background-image: url(/assets/img/desktop/@1x/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.grid1x5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+  grid-template-areas: "titulo titulo" "enlaces enlaces" "avatar .";
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center;
+  padding: 15px; }
+
+.banner__titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+  /* align-self: center;
+    justify-self: center; */ }
+
+.banner__nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: enlaces;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "enlace1 enlace2";
+  justify-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.banner__nav__1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: enlace1; }
+
+.banner__nav__2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: enlace2; }
+
+.banner__avatar {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: avatar;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: start;
+  justify-self: start; }
+
+.grid__main {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.6em;
+  padding: 1em 4em 0 4em;
+  /* grid-template: 3fr / 1fr; */
+  grid-template-areas: "columna1 columna2"; }
+
+.centroPag__fotos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: columna1;
+  display: -ms-grid;
+  display: grid; }
+
+.blog {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: columna2; }

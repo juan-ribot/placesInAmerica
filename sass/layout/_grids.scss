@@ -1,3 +1,78 @@
 // *****************************
 // +++++++ $GRIDS ++++++
 // *****************************
+
+.grid1x5{
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+    grid-template-areas:
+    "titulo titulo"
+    "enlaces enlaces"
+    "avatar .";
+     align-items: center;
+    justify-items: center; 
+    padding: 15px; 
+    
+    
+
+}
+.banner__titulo{
+    grid-area: titulo;
+    /* align-self: center;
+    justify-self: center; */
+}
+.banner__nav{ 
+    grid-area: enlaces;
+    
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    display:grid;
+    grid-template-areas:
+    "enlace1 enlace2";
+    justify-items: center; 
+    align-items: flex-start;
+    
+}
+.banner__nav__1{ 
+    
+    grid-area: enlace1;
+    
+    
+
+}
+.banner__nav__2{ 
+    grid-area: enlace2;
+}
+
+
+
+
+.banner__avatar{
+    grid-area: avatar;
+    align-self: center;
+    
+    justify-self: start;
+
+}
+.grid__main{
+   
+    display: grid;
+    grid-gap: 1.6em;
+    padding: 1em 4em 0 4em;
+    
+    /* grid-template: 3fr / 1fr; */
+    grid-template-areas:
+    "columna1 columna2";
+}
+.centroPag__fotos{
+    grid-area: columna1;
+    display: grid;
+    
+    
+}
+.blog{
+    grid-area: columna2;
+    
+}

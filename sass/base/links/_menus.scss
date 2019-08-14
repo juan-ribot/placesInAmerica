@@ -2,10 +2,3 @@
 // +++++++ $MENUS ++++++
 // *****************************
 
-input,.desplegable{
-    display: none;
-}
-
-input:checked ~ .desplegable{
-    display: block;
-}
